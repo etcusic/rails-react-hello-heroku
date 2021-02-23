@@ -26,6 +26,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>Hello, Heroku!</h1>
+          <h2>Change made in App.js</h2>
           <h2>{ this.state.plants.map(plant => plant.name).join(' ') }</h2>
         </header>
       </div>
