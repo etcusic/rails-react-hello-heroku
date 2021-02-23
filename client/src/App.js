@@ -1,8 +1,6 @@
 
 import React, { Component } from 'react';
 import './App.css';
-import ListContainer from './components/ListContainer'
-import listItem from './components/listItem'
 
 class App extends Component {
   constructor(){

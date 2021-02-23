@@ -1,0 +1,26 @@
+{
+  "name": "rails-react-hello-heroku",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm install && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client' build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etcusic/rails-react-hello-heroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etcusic/rails-react-hello-heroku/issues"
+  },
+  "homepage": "https://github.com/etcusic/rails-react-hello-heroku#readme"
+}
