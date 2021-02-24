@@ -6,7 +6,8 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      plants: []
+      plants: [],
+      message: "Initial state"
     }
   }
 
@@ -16,7 +17,8 @@ class App extends Component {
     .then(plants => {
       console.log(plants)
       this.setState({
-        plants: plants
+        plants: plants,
+        message: "Changed state!"
       })
     })
   }
@@ -26,7 +28,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>Hello, Heroku!</h1>
-          <h2>Change made in App.js</h2>
+          <h2>{ this.state.message }</h2>
           <h2>{ this.state.plants.map(plant => plant.name).join(' ') }</h2>
         </header>
       </div>
